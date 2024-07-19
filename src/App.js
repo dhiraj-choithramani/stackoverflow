@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
 import Home from './components/Home';
+import SavedQuestions from './components/SavedQuestions';
 import './App.css';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             }
           />
           <Route path="/home" element={<Home />} />
+          <Route path="/saved" element={<SavedQuestions />} />
         </Routes>
       </div>
     </Router>
